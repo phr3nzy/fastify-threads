@@ -1,0 +1,38 @@
+{
+  "name": "fastify-threads",
+  "version": "1.0.0",
+  "description": "A Fastify plugin that exposes threads.js functionality",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "fastify",
+    "worker_threads",
+    "threads.js"
+  ],
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "standard | snazzy && tap test.js",
+    "test:ci": "standard | snazzy && tap test.js --coverage-report=lcovonly"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phr3nzy/fastify-threads"
+  },
+  "author": "Osama Adil <osama.adil47@protonmail.com>",
+  "homepage": "https://github.com/phr3nzy/fastify-threads#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "fastify": "^3.15.1",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.3",
+    "tap": "^15.0.9",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "fastify-plugin": "^3.0.0",
+    "threads": "^1.6.4",
+    "tiny-worker": "^2.3.0"
+  }
+}
