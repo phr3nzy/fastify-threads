@@ -5,6 +5,10 @@
 
 A Fastify plugin that exposes [threads.js](https://github.com/andywer/threads.js) functionality
 
+## Requirements
+
+- Node.js v14+
+
 ## Install
 
 ```bash
