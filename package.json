@@ -1,6 +1,6 @@
 {
   "name": "fastify-threads",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "A Fastify plugin that exposes threads.js functionality",
   "main": "index.js",
   "types": "index.d.ts",
