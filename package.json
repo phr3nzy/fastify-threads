@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "fastify-plugin": "^4.0.0",
-    "threads": "^1.6.4",
-    "tiny-worker": "^2.3.0"
+    "threads": "^1.6.4"
   }
 }
