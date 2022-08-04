@@ -8,8 +8,12 @@ test('hash a string', async (test) => {
   const fastify = Fastify()
   await fastify.register(threads)
 
-  const hash = await fastify.threads.spawn(new fastify.threads.Worker('./examples/hash'))
+  const { spawn, Worker, Thread } = fastify.threads
+
+  const hash = await spawn(new Worker('./examples/hash'))
   const hashedString = await hash('hello from fastify-threads')
+
+  await Thread.terminate(hash)
 
   test.ok(hashedString)
   test.end()
